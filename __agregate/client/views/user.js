@@ -8,6 +8,17 @@ module.exports = View.extend({
         'model.fullName': {
             type: 'text',
             role: 'user-name'
+        },
+        'model.viewUrl': {
+            type: 'attribute',
+            name: 'href',
+            role: 'action-view-user'
         }
+    },
+    events: {
+        'click [role=action-delete-user]': 'handleDeleteClick'
+    },
+    handleDeleteClick: function () {
+        this.model.destroy();
     }
 });
