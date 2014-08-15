@@ -25,8 +25,6 @@ server.pack.register({
             beforeBuildCSS: function (done) {
                 if (!config.isDev) return done();
 
-
-
                 stylizer({
                     infile: __dirname + '/public/app/main.styl',
                     outfile: __dirname + '/public/app.css',
