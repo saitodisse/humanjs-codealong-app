@@ -26,6 +26,12 @@ module.exports = Model.extend({
             fn: function () {
                 return '/users/' + this.id;
             }
+        },
+        editUrl: {
+            deps: ['id'],
+            fn: function () {
+                return '/users/' + this.id + '/edit';
+            }
         }
     }
 });

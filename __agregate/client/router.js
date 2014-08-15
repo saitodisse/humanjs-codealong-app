@@ -3,6 +3,7 @@ var HomePage = require('./pages/home');
 var UserListPage = require('./pages/user-list');
 var UserViewPage = require('./pages/user-view');
 var UserCreatePage = require('./pages/user-create');
+var UserEditPage = require('./pages/user-edit');
 
 
 module.exports = Router.extend({
@@ -10,7 +11,8 @@ module.exports = Router.extend({
         '': 'home',
         'users': 'users',
         'users/create': 'userCreate',
-        'users/:id': 'userView'
+        'users/:id': 'userView',
+        'users/:id/edit': 'userEdit'
     },
 
     home: function () {
@@ -32,5 +34,12 @@ module.exports = Router.extend({
 
     userCreate: function () {
         this.trigger('page', new UserCreatePage());
+    },
+
+    userEdit: function (id) {
+        this.trigger('page', new UserEditPage({
+            id: Number(id),
+            collection: app.persons
+        }));
     }
 });
