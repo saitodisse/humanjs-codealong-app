@@ -10,6 +10,12 @@ module.exports = View.extend({
     events: {
         'click a[href]': 'handleLinkClick'
     },
+    bindings: {
+        'model.fullName': {
+            type: 'text',
+            role: 'user-name'
+        }
+    },
     initialize: function () {
         this.listenTo(app.router, 'page', this.handleNewPage);
     },
