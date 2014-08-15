@@ -11,6 +11,7 @@ server.route({
     path: '/api/me',
     handler: function (request, reply) {
         reply({
+            id: '23423',
             givenName: 'Henrik',
             familyName: 'Joreteg',
             email: 'henrik@andyet.net'
