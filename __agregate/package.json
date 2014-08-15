@@ -19,6 +19,7 @@
     "domthing": "^0.1.1",
     "getconfig": "^0.3.0",
     "hapi": "^6.0.2",
+    "hapi-dummy-api": "^0.2.0",
     "moonboots_hapi": "^2.3.2",
     "stylizer": "^0.7.0",
     "templatizer": "^0.3.6"

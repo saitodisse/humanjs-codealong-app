@@ -13,15 +13,8 @@
     templatizer["pages"] = {};
 
     // body.jade compiled template
-    templatizer["body"] = function tmpl_body(locals) {
-        var buf = [];
-        var jade_mixins = {};
-        var jade_interp;
-        var locals_for_with = locals || {};
-        (function(model) {
-            buf.push('<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">Our App</a></div><ul class="nav navbar-nav"><li><a href="/list">list</a></li></ul><p role="user-name" class="navbar-text navbar-right">' + jade.escape(null == (jade_interp = model.fullName) ? "" : jade_interp) + '</p></div></nav><div class="container"><main role="page-container"></main></div></body>');
-        })("model" in locals_for_with ? locals_for_with.model : typeof model !== "undefined" ? model : undefined);
-        return buf.join("");
+    templatizer["body"] = function tmpl_body() {
+        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">Our App</a></div><ul class="nav navbar-nav"><li><a href="/list">list</a></li></ul><p role="user-name" class="navbar-text navbar-right"></p></div></nav><div class="container"><main role="page-container"></main></div></body>';
     };
 
     // pages/home.jade compiled template
