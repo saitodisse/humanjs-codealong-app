@@ -1,5 +1,6 @@
 var Router = require('ampersand-router');
 var HomePage = require('./pages/home');
+var ListPage = require('./pages/list');
 
 
 module.exports = Router.extend({
@@ -13,6 +14,6 @@ module.exports = Router.extend({
     },
 
     list: function () {
-        console.log('this is the list');
+        this.trigger('page', new ListPage());
     }
 });
