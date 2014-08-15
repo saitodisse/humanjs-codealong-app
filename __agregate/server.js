@@ -6,6 +6,19 @@ var templatizer = require('templatizer');
 var stylizer = require('stylizer');
 
 
+server.route({
+    method: 'GET',
+    path: '/api/me',
+    handler: function (request, reply) {
+        reply({
+            givenName: 'Henrik',
+            familyName: 'Joreteg',
+            email: 'henrik@andyet.net'
+        });
+    }
+});
+
+
 server.pack.register({
     plugin: moonboots,
     options: {
