@@ -12,6 +12,8 @@
     "ampersand-collection-view": "^1.0.3",
     "ampersand-dom": "^1.2.1",
     "ampersand-domthing-mixin": "^0.1.0",
+    "ampersand-form-view": "^1.0.0",
+    "ampersand-input-view": "^1.2.3",
     "ampersand-model": "^3.0.4",
     "ampersand-rest-collection": "^1.1.1",
     "ampersand-router": "^1.0.1",

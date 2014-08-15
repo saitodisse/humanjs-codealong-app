@@ -28,6 +28,11 @@
         return '<section class="page"><h2>Home</h2></section>';
     };
 
+    // pages/userCreate.jade compiled template
+    templatizer["pages"]["userCreate"] = function tmpl_pages_userCreate() {
+        return '<section class="page create-user"><h1>Create a new user</h1><form role="user-form"><fieldset role="field-container"></fieldset><button type="submit" class="btn btn-primary">Create User</button></form></section>';
+    };
+
     // pages/userView.jade compiled template
     templatizer["pages"]["userView"] = function tmpl_pages_userView() {
         return '<section class="page user-view"><img role="user-avatar" width="50" height="50"/><p role="user-name"></p><p role="user-awesomeness"></p></section>';
