@@ -9,6 +9,7 @@
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "license": "MIT",
   "dependencies": {
+    "ampersand-collection-view": "^1.0.3",
     "ampersand-dom": "^1.2.1",
     "ampersand-domthing-mixin": "^0.1.0",
     "ampersand-model": "^3.0.4",

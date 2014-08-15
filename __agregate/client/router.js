@@ -15,7 +15,7 @@ module.exports = Router.extend({
 
     users: function () {
         this.trigger('page', new UserListPage({
-            collection: app.persons
+            //collection: app.persons
         }));
     }
 });
